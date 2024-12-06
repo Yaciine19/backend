@@ -30,13 +30,13 @@ const Registration = mongoose.model('Registration', registrationSchema);
 
 app.use(
   cors({
-    origin: "http://127.0.0.1:5500",
+    origin: "https://chemvision.vercel.app",
     methods: ["GET", "POST"],
     allowedHeaders: ["Content-Type"],
   })
 );
 
-const deadline = new Date("2024-12-06T22:10:00").getTime();
+const deadline = new Date("2024-12-06T22:35:00").getTime();
 
 app.use(bodyParser.json());
 
